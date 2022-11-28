@@ -1,0 +1,108 @@
+@font-face {
+    font-family: CustomFont;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+.wrapper{
+
+    margin-left:auto;
+    margin-right:auto;
+    width:1500px;
+    
+}
+
+body{
+    font-family: CustomFont;
+    background: linear-gradient(
+        to bottom,
+        rgb(255, 255, 241) 0%,
+        rgb(255, 255, 241) 35%,
+        white 35%,
+        white 95%,
+        rgb(255, 255, 241) 95%,
+        rgb(255, 255, 241) 100%
+    );
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.header{
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.body1{
+    position: relative;
+    margin-top: 200px;
+}
+
+.lb1{
+    float: left;
+    width: 700px;
+    word-wrap: normal;
+
+}
+
+.rb1{
+    margin-top: -80px;
+    float: right;
+    height: 680px;
+    width: 680px;
+
+}
+
+
+.body2{
+    margin-top: 850px;
+    position: relative;
+}
+
+
+
+.cb2l{
+    float: left;
+}
+
+.cb2r{
+    float: right;
+    width: 500px;
+    height: 500px;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.portfolios {
+    width: 80%;
+    height: 350px;
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.inner-port {
+    width: 150%;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer{
+    margin-top: 900px;
+}

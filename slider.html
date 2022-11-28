@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Codewell Project</title>
+</head>
+<style>
+.card {
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+}
+.card:nth-child(odd) {
+    background-color: blue;
+}
+.card:nth-child(even) {
+    background-color: rgb(0, 183, 255);
+}
+.portfolios {
+    width: 80%;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.inner-port {
+    width: 150%;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+</style>
+
+
+
+<body>
+    <div class="portfolios">
+        <div class="inner-port">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>          
+        </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    <script>
+        let portfolios = document.querySelector('.portfolios');
+        let innerport = document.querySelector('.inner-port');
+        
+        let pressed = false;
+        let startX;
+        let x;
+        
+        
+        portfolios.addEventListener("mousedown", (e) => {
+        pressed = true;
+        startX = e.offsetX - innerport.offsetLeft;
+        portfolios.style.cursor = "grabbing";
+        
+        });
+        
+        portfolios.addEventListener("mouseup", () => { 
+        portfolios.style.cursor = "grab";
+        pressed = false;
+        
+        });
+        
+        portfolios.addEventListener("mousemove", (e) => {
+        if (!pressed) return;
+        e.preventDefault();
+        
+        x = e.offsetX;
+        });
+        
+        portfolios.addEventListener("mousemove", (e) => {
+        if (!pressed) return;
+        e.preventDefault();
+        
+        x = e.offsetX;
+        
+        innerport.style.left = `${x - startX}px`; 
+        });
+    
+    </script>
+</body>
+
+</html>
+
+

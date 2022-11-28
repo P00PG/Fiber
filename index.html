@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Codewell Project</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="header">
+        <h4 style="float: left;">Fiber</h4>
+        <div class="nav">
+            <a href="">Community</a>
+            <a href="">Pricing</a>
+            <a href="">Features</a>
+        </div>
+        <div style="float: right;" class="right_header">
+            <h4 style="float: left;">Sign In</h4>
+            <a href="">Sign Up</a>
+        </div>
+    </div>
+
+
+    <div class="body1">
+        <div class="lb1">
+            <div class="ratings">
+                <img src="Fiber Starter Files\Assets\star.svg">
+                <img src="Fiber Starter Files\Assets\star.svg">
+                <img src="Fiber Starter Files\Assets\star.svg">
+                <img src="Fiber Starter Files\Assets\star.svg">
+                <img src="Fiber Starter Files\Assets\star.svg"> Rated 4.8/5 (243 reviews)
+            </div>
+
+            <h1 style="font-size:60px ; font-weight:bolder;">Create your portfolio in minutes.</h1>
+            <p>With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
+            <a href="">Start Free Trial</a>
+            <a href="">View Examples</a><br>
+            <img src="Fiber Starter Files\Assets\Checkmark.svg"> No credit Card Required
+            <img src="Fiber Starter Files\Assets\Checkmark.svg"> 10 Free Templates
+
+        </div>
+
+        <div class="rb1">
+            <img src="Fiber Starter Files\Assets\hero-Illustration.png">
+
+        </div>
+    </div>
+    
+    <div class="body2">
+        <p>Why Fiber?</p>
+        <h3>A good portfolio means good employability.</h3>
+        <table name="body2table">
+            <tr>
+                <td><img src="Fiber Starter Files\Assets\time.svg"></td> 
+                <td><img src="Fiber Starter Files\Assets\code.svg"></td> 
+                <td><img src="Fiber Starter Files\Assets\allSizes.svg"></td> 
+            </tr>
+
+            <tr>
+                <td>Build in minutes</td>
+                <td>Add custom CSS</td>
+                <td>Responsive</td>
+            </tr>
+
+            <tr>
+                <td>With a selection of premade templates, you can build out a portfolio in less than 10 minutes,</td>
+                <td>Customize your personal portfolio even more with the ability to add your own custom CSS styles.</td>
+                <td>All Fiber templates are fully responsive to ensure the experience is seemless across all devices.</td>
+            </tr>
+
+        </table>
+
+        <div class="centerbody2">
+            <div class="cb2l">
+                <h3>Diversify your portfolio</h3>
+                <p>Create an even more impressive portfolio by creating case studies for your projects. Simply follow out step-by-step guide.</p>
+                <a href="">Start Free Trial</a>
+            </div>
+
+            <div class="cb2r">
+                <img src="Fiber Starter Files\Assets\Page Image.png">
+            </div>
+        </div>
+
+        <div class="portfolios">
+            <div class="inner-port">
+                <div class="card">
+                    <img src="Fiber Starter Files\Assets\User Avatar.svg"><span>Sarah Andrews</span><br>
+                    $100k in revenue
+                    <p>Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.
+                    </p>
+                    <a href="">View Sarah's Portfolio</a>
+                </div>
+                <div class="card">
+                    <img src="Fiber Starter Files\Assets\User Avatar 2.svg"><span>Matthew Higgins</span><br>
+                        $20k in revenue
+                    <p>I have been getting A LOT of leads ever since I used Fiber's premade templates,now I just need to work on my case studies and I'll be ready to go!
+                    </p>
+                    <a href="">View Matthew's Portfolio</a>
+                </div>
+                <div class="card">
+                    <img src="Fiber Starter Files\Assets\User Avatar 32.svg"><span>Janice Dave</span><br>
+                    $30k in revenue
+                    <p>I only just started freelancing this year and have already made more than I ever have in my full-time job. The templates provided are so amazing.
+                    </p>
+                    <a href="">View Janice's Portfolio</a>
+                </div>        
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="left_footer">
+            <b>Fiber</b>
+            <p>With IndieBrew, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates</p>
+        
+            <p>Made with &#10084 in the UK.</p>
+        </div>
+        
+        <div class="right_footer">
+            <table>
+                <tr style="color: #000;">
+                    <th>Sitemap</th>
+                    <th>Resources</th>
+                    <th>Company</th>
+                    <th>Portfolios</th>
+                </tr>
+                 <tr>
+                    <td>Homepage</td>
+                    <td>Support</td>
+                    <td>About</td>
+                    <td>Sarah Andrews</td>
+                </tr>
+                <tr>
+                    <td>Pricing</td>
+                    <td>Contact</td>
+                    <td>Customers</td>
+                    <td>Matthew Higgins</td>
+                </tr>
+                <tr>
+                    <td>Testimonials</td>
+                    <td>FAQ</td>
+                    <td>Blog</td>
+                    <td>Janice Dave</td>
+                </tr>
+
+                <tr>
+                    <td>Features</td>
+                </tr>
+            </table>
+        
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    let portfolios = document.querySelector('.portfolios');
+    let innerport = document.querySelector('.inner-port');
+
+    let pressed = false;
+    let startX;
+    let x;
+
+
+    portfolios.addEventListener("mousedown", (e) => {
+    pressed = true;
+    startX = e.offsetX - innerport.offsetLeft;
+    portfolios.style.cursor = "grabbing";
+    
+    });
+
+    portfolios.addEventListener("mouseup", () => { 
+    portfolios.style.cursor = "grab";
+    pressed = false;
+    
+    });
+
+    portfolios.addEventListener("mousemove", (e) => {
+    if (!pressed) return;
+    e.preventDefault();
+
+    x = e.offsetX;
+    });
+
+    portfolios.addEventListener("mousemove", (e) => {
+    if (!pressed) return;
+    e.preventDefault();
+
+    x = e.offsetX;
+
+    innerport.style.left = `${x - startX}px`; 
+    });
+
+    const checkBoundary = () => {
+    let outer = portfolios.getBoundingClientRect();
+    let inner = innerport.getBoundingClientRect();
+
+    if (parseInt(innerport.style.left) > 0) {
+        innerport.style.left = "0px";
+    }
+
+    if (inner.right < outer.right) {
+        innerport.style.left = `-${inner.width - outer.width}px`;
+    }
+
+    };
+
+    portfolios.addEventListener("mousemove", (e) => {
+    
+    checkBoundary();
+});
+
+</script>
+
+</body>
+</html>
