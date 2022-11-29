@@ -15,17 +15,21 @@ body{
     font-family: CustomFont;
     background: linear-gradient(
         to bottom,
-        rgb(255, 255, 241) 0%,
-        rgb(255, 255, 241) 35%,
-        white 35%,
-        white 95%,
-        rgb(255, 255, 241) 95%,
-        rgb(255, 255, 241) 100%
+        rgba(235, 234, 231, 0.479) 0%,
+        rgba(235, 234, 231, 0.479) 30%,
+        white 30%,
+        white 90%,
+        rgba(235, 234, 231, 0.479) 90%,
+        rgba(235, 234, 231, 0.479) 100%
     );
+    
+    font-size: 22px;
+    color: gray;
 }
 
 a{
     text-decoration: none;
+    padding: 20px;
 }
 
 img {
@@ -33,10 +37,25 @@ img {
     height: auto;
 }
 
+h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
 
 .header{
-    font-size: 22px;
+    width: 1500px;
+    height: 100px;
     text-align: center;
+    padding-top: 40px;
+    color: black;
+}
+
+.ratings{
+    color: black;
+}
+
+.right_header{
+    margin-top: -58px;
 }
 
 
@@ -52,8 +71,9 @@ img {
 
 }
 
+
 .rb1{
-    margin-top: -80px;
+    margin-top: -150px;
     float: right;
     height: 680px;
     width: 680px;
@@ -64,32 +84,50 @@ img {
 .body2{
     margin-top: 850px;
     position: relative;
+    width: 50%;
+    word-wrap: normal;
 }
 
-
+.centerbody2{
+    background-color: rgb(124, 64, 221);
+    height: 520px;
+    padding: 100px;
+    padding-bottom: 0px;
+    margin-top: 100px;
+    border-radius: 20px;
+    width: 174%;
+    color: white;
+}
 
 .cb2l{
     float: left;
+    word-wrap: normal;
+    width: 500px;
 }
 
 .cb2r{
     float: right;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 800px;
+    margin: 0px;
 }
 
 .card {
     height: 300px;
     width: 400px;
+    padding: 50px;
+    margin-right: 55px;
     border-radius: 5px;
+    border: 2px solid lightgrey;
+    color: black;
 }
 
 .portfolios {
-    width: 80%;
-    height: 350px;
+    width: 200%;
+    height: 500px;
     position: absolute;
-    top: 500%;
-    left: 50%;
+    top: 133%;
+    left: 100%;
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
@@ -103,6 +141,34 @@ img {
     left: 0;
 }
 
+.cardlink{
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; 
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(124, 64, 221);
+}
+
+span{
+    color: rgb(124, 64, 221);
+    font-weight: bold;
+    display: inline-block;
+}
+
 .footer{
-    margin-top: 900px;
+    margin-top: 700px;
+}
+
+.left_footer{
+    float: left;
+    width: 37%;
+    word-wrap: normal;
+    margin-top: 21px;
+}
+
+.right_footer{
+    float: right;
+    width: 50%;
 }
