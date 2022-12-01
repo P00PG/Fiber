@@ -3,11 +3,15 @@
     src: url(Inter-VariableFont_slnt,wght.ttf);
 }
 
+* {box-sizing:border-box}
+
 .wrapper{
 
     margin-left:auto;
     margin-right:auto;
     width:1500px;
+    display: flex;
+    flex-direction: row;
     
 }
 
@@ -23,9 +27,67 @@ body{
     
     font-size: 22px;
     color: gray;
+    width: 100%;
+
 }
 
+
+.leftbody{
+    flex: 1;
+}
+
+form{
+    height: 30%;
+    width: 50%;
+    padding: 50px;
+    word-wrap: normal;
+}
 
 .userinputs{
     font-size: 50px;
 }
+
+.rightbody{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    width: 98%;
+    height: auto;
+}
+
+.signupimage{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
