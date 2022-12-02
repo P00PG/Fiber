@@ -16,6 +16,7 @@
 
 body{
     font-family: CustomFont;
+    background-size: contain;
     background: linear-gradient(
         to right,
         white 0%,
@@ -29,6 +30,7 @@ body{
     width: 100%;
     padding: 30px;
     font-weight: 590;
+    overflow: scroll;
 
 }
 
